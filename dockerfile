@@ -1,5 +1,5 @@
 # use an official Python runtime as a parwnt image 
-FROM python: 3.8-slim
+FROM python:3.8-slim
 
 
 #set the working directory in the container 
@@ -15,4 +15,4 @@ EXPOSE 5000
 
 # ENV FLASK_APP = app.py
 
-CMD ["python","run","app.py","--host=0.0.0.0"]
+CMD ["python","app.py","--host=0.0.0.0"]
